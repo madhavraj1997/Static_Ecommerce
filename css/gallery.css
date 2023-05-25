@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+:root{
+    --blue:#2980b9;
+}
+*{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: all .2s cubic-beizer(0.37,1.14,0.26,1.24);
+}
+*::selection{
+    background: #ff3300;
+     color: #fff;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+.btn{
+    height: 4rem;
+    width: 14rem;
+    background: var(--blue);
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+.btn:hover{
+    letter-spacing: .2rem;
+    opacity: .8;
+}
+.heading{
+    padding-top: 5rem;
+    width: 95%;
+    border-bottom: 0.2rem solid rgba(0,0,0,0.3);
+    margin: 0 auto;
+}
+.heading span{
+    font-size: 2rem;
+    padding: 1rem 6rem;
+    color: #fff;
+    background:var(--blue);
+    border-top-right-radius: 3rem;
+    display: inline-block;
+}
+
+.gallery{
+    min-height: 100vh;
+}
+.gallery .controls{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1.5rem 0;
+    list-style: none;
+}
+.gallery .controls .btn{
+    margin: 2rem;
+    line-height: 4rem;
+    text-align: center;
+    box-shadow: 0 0.3rem 0.5rem rgba(0,0,0,0.3);
+}
+.gallery .controls .btn.button-active{
+    background: #333;
+}
+.gallery .image-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.gallery .image-container .box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem;
+    border: 0.1rem solid rgba(0,0,0,0.3);
+    flex: 1 1 30rem;
+}
+.gallery .image-container .box .image{
+    height: 12rem;
+    width: 20rem;
+    text-align: center;
+    padding: 1rem;
+    background: #f0f0f0;
+}
+.gallery .image-container .box .image img{
+    height: 100%;
+    object-fit: cover;
+}
+.gallery .image-container .box:hover .image{
+    background: #ccc;
+}
+.gallery .image-container .box .info{
+    width: 100%;
+}
+.gallery .image-container .box .info h3{
+    font-size: 2rem;
+    color: var(--blue);
+    padding: 1rem;
+}
+.gallery .image-container .box .info .subinfo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 0.1rem solid rgba(0,0,0,0.3);
+    padding: 1rem;
+}
+.gallery .image-container .box .info .subinfo .price{
+    color: #ff3300;
+    font-size: 2rem;
+}
+.gallery .image-container .box .info .subinfo .stars i{
+    color: orange;
+    font-size: 1.5rem;
+}

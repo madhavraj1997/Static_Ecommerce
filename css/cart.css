@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+:root{
+    --blue:#2980b9;
+}
+*{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: all .2s cubic-beizer(0.37,1.14,0.26,1.24);
+}
+*::selection{
+    background: #ff3300;
+    color: #fff;
+}
+/* html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}  */
+
+/* cart items  */
+.cart-page{
+    margin: 2rem auto;
+}
+table{
+    width: 100%;
+    border-collapse:collapse;
+}
+.cart-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+th{
+    text-align: left;
+    padding: .5rem;
+    color: #fff;
+    background-color: var(--blue);
+    font-weight: normal;
+}
+td{
+    padding: 2rem 1rem;
+}
+td input{
+    width: 2rem;
+    height: 1.3rem;
+    padding: .2rem;
+}
+td a{
+    color: #ff523b;
+    font-size: .7rem;
+}
+td img{
+    width: 8rem;
+    height: 8rem;
+    margin-right: 10px;
+
+}
